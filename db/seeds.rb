@@ -13,6 +13,10 @@ Tool.destroy_all
     )
 end
 
+Category.create(name: "wheel and tire")
+Category.create(name: "chain and shifting")
+Category.create(name: "braking")
+
 Tool.create(name: "tire lever")
 Tool.create(name: "small adjustable wrench")
 Tool.create(name: "tire lever")
@@ -24,27 +28,13 @@ Tool.create(name: "tire pump")
 Tool.create(name: "chain breaker")
 Tool.create(name: "spoke wrench")
 
-Symptom.create(category: "wheel and tire", 
-            description: "I have a flat tire"
-            )
-Symptom.create(category: "wheel and tire", 
-            description: "I hear a creaking sound from the wheel"
-            )
-Symptom.create(category: "chain and shifting", 
-            description: "My chain fell off"
-            )
-Symptom.create(category: "chain and shifting", 
-            description: "I hear a grinding sound when I pedal"
-            )
-Symptom.create(category: "chain and shifting", 
-            description: "I can't shift into certain gears"
-            )
-Symptom.create(category: "braking", 
-            description: "I hear a squealing sound when braking"
-            )
-Symptom.create(category: "braking", 
-            description: "One pad is rubbing on the wheel"
-            )
+Symptom.create(description: "I have a flat tire").update(category_id: 1)
+Symptom.create(description: "I hear a creaking sound from the wheel").update(category_id: 1)
+Symptom.create(description: "My chain fell off").update(category_id: 2)
+Symptom.create(description: "I hear a grinding sound when I pedal").update(category_id: 2)
+Symptom.create(description: "I can't shift into certain gears").update(category_id: 2)
+Symptom.create(description: "I hear a squealing sound when braking").update(category_id: 3)
+Symptom.create(description: "One pad is rubbing on the wheel").update(category_id: 3)
 
 7.times do 
   Solution.create(est_time: rand(5..60),
