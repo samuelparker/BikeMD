@@ -1,13 +1,43 @@
-/** {
-  border: 1px solid red;
-}*/
-
-body {
-  margin: 2%;
+* {
+  /*border: 1px solid red;*/
 }
 
-h1 {
+body {
+  margin: 1%;
+  /*min-height: 667px;*/
+}
+
+
+.header {
   text-align: center;
+  font-size: 2em;
+  /*max-width: 100%*/
+  background-color: #404040;
+  padding: 1%;
+  margin-bottom: 1%;
+  position: relative;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.header h1 {
+  display: inline-block;
+}
+#user-menu {
+  padding: 2%;
+  float: left;
+  /*max-height: 5px;*/
+}
+
+#hamburger-menu {
+  padding: 5%;
+  float: right;
+}
+
+#hamburger-menu img {
+  max-height: 50px;
 }
 
 .category {
@@ -39,6 +69,61 @@ h1 {
   border: 1px solid blue;
   border-radius: 50%;
   background-color: #FF0000
+}
+
+.search-bar {
+  display: block;
+  background-color: #A8A8A8;
+  padding: 3%;
+  position: relative;
+  bottom: 0%;
+}
+
+.new-user-form {
+  display: block;
+  background-color: #A8A8A8;
+  padding: 3%;
+  position: relative;
+  bottom: 0%;
+}
+
+.new-user-form h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+}
+
+.new-user-form form input {
+  font-size: 2em;
+  padding: 2%;
+  margin: 2%;
+  min-width: 90%;
+}
+
+.new-user-form form input[type="submit"] {
+  margin-left: 2%;
+  /*border-radius: 20%;*/
+  box-shadow: 5px 5px 5px #888888;
+  min-width: 95%;
+}
+
+.search-bar form input[type="text"] {
+  /*border-radius: 10%;*/
+  font-size: 2em;
+  padding: 2%;
+  min-width: 75%;
+}
+
+.search-bar form input[type="submit"] {
+  margin-left: 2%;
+  border-radius: 20%;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.search-bar form input {
+  font-size: 2em;
+  padding: 2%;
+  min-width: 18%;
 }
 
 #hs-front-brake {
@@ -80,6 +165,9 @@ h1 {
   position: relative;
   margin: 0 auto;
   width: 100%;
+  min-height: 100%;
+  margin-top: 20%;
+  margin-bottom: 25%
 }
 #bike-pic img {
   margin: 0 auto;

@@ -1,6 +1,5 @@
-<h1>BikeMD</h1>
 <div id="bike-pic">
-  <img src='../images/bicycle-traffic-sign.gif'>
+  <img src="../images/bicycle-traffic-sign.gif">
   <div id="hs-front-brake" class="hotspot"></div>
   <div id="hs-front-tire" class="hotspot"></div>
   <div id="hs-cranks" class="hotspot"></div>
@@ -9,16 +8,3 @@
   <div id="hs-rear-brake" class="hotspot"></div>
   <div id="hs-rear-deraileur" class="hotspot"></div>
 </div>
-<ul>
-  <% @categories.each do |category| %>
-    <li class="category"><%= "#{ category.name }" %></li>
-  <ul>
-    <% category.symptoms.each do |symptom| %>
-    <li class="symptom">
-      <a href='solutions/<%= "#{symptom.solution_id }" %>'><%= "#{ symptom.description }" %></a>
-      <hr>
-    </li>
-    <% end %>
-  </ul>
-  <% end %>
-</ul>
