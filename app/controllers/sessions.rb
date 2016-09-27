@@ -3,9 +3,9 @@ get '/sessions' do
 end
 
 post '/sessions' do
-  @user = User.find_by_email(params[:email])
-    if @user && @user.authenticate
-      session[:id] = user.id
+  @user = User.find_by_email(params[:user][:email])
+    if @user && @user.authenticate(params[:user][:password])
+      session[:id] = @user.id
       redirect "/users/#{@user.id}"
     else
       @errors = ["Email and or Password not found."]
