@@ -1,5 +1,5 @@
 get '/solutions' do
-  @categories = Category.all
+  @hotspot = Hotspot.find_by(name: params[:hs])
   erb :'solutions/index'
 end
 

@@ -1,7 +1,19 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $(".hotspot").click(function(event){
+    event.preventDefault();
+    var hsAction = $(this).parent().attr("href");
+    var request = $.ajax({
+      url: hsAction,
+    });
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+    request.done(function(hotspot){
+      $(".hotspot-menu").hide();
+      $(".hotspot-instructions").hide();
+      // $(".search-bar").hide();
+      // $("#bike-pic").css("bottom", "55%")
+      hsMenu = $(hotspot).find(".hotspot-menu");
+      // $("#solutions-menu").remove(hsMenu);
+      $("#solutions-menu").append(hsMenu);
+    })
+  });
 });
