@@ -27,6 +27,7 @@ GEM
       xpath (~> 2.0)
     coderay (1.1.1)
     diff-lcs (1.2.5)
+    dotenv (2.1.1)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     faker (1.4.3)
@@ -96,6 +97,7 @@ DEPENDENCIES
   awesome_print
   bcrypt
   capybara
+  dotenv
   factory_girl
   faker
   pg
@@ -109,4 +111,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   1.13.0.rc.2
+   1.13.1
