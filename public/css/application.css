@@ -23,7 +23,7 @@ body {
 .header h1 {
   display: inline-block;
 }
-#user-menu {
+#user-menu-icon {
   padding: 1%;
   float: left;
   /*max-height: 5px;*/
@@ -36,6 +36,27 @@ body {
 
 #hamburger-menu-icon img {
   max-height: 50px;
+}
+
+.drop-down-menu {
+  padding: 2%;
+  background-color: #C46A6A;
+  font-size: 3em;
+  position: relative;
+  bottom: 0%;
+}
+
+.drop-down-menu p {
+  position: absolute;
+  right: 2%;
+  bottom: 55%;
+}
+
+.drop-down-menu a {
+  padding: 2%;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 
 .category a {

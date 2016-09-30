@@ -1,4 +1,4 @@
-<div id="solutions-menu">  
+<div id="solutions-menu">
   <div id="bike-pic">
     <img src="../images/bicycle-traffic-sign-no-frame.png">
     <a href="/solutions?hs=front-brake">
@@ -23,18 +23,22 @@
       <div id="hs-rear-deraileur" class="hotspot"></div>
     </a>
   </div>
- 
-      <% if @hotspot %>
-        <%= erb :'partials/_hotspot_menu' %>
-      <% else %>
-      <div class="hotspot-instructions">   
-        <h3>Tap on the problem area<br>to select an issue</h3>
-      </div>
-      <% end %>
-  <div class="search-bar">
-    <form action="/solutions" method="get"> 
-      <input type="submit" value="Search">
-      <input type="text" name="search">
-    </form>
-  </div>
-</div>  
+
+  <% if @hotspot %>
+    <%= erb :'partials/_hotspot_menu' %>
+  <% else %>
+    <div class="hotspot-instructions">
+      <h3>Tap on the problem area<br>to select an issue</h3>
+    </div>
+  <% end %>
+
+  <% if !@menu %>
+    <div class="search-bar">
+      <form action="/solutions" method="get">
+        <input type="submit" value="Search">
+        <input type="text" name="search">
+      </form>
+    </div>
+  <% end %>
+
+</div>
