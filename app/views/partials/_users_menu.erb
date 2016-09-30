@@ -1,11 +1,7 @@
-<% if current_user%>
-  <a href="/users/#{current_user.id}">Account</a>
+<% if current_user %>
+  <a href="/users/<%= current_user.id %>">Account</a>
   <a href="#">View my solutions</a>
   <a href="#">Upload new solution</a>
-  <form action="/sessions/<%= @user.id %>" method="post">
-    <input type="hidden" name="_method" value="delete">
-    <input class="button" type="submit" value="Logout">
-  </form>
 <% else %>
   <a href="/sessions">Log in</a>
   <a href="/users/new">Create an account</a>
