@@ -217,7 +217,7 @@ form input[type="submit"] {
   color: white;
   font-size: 3em;
   position: absolute;
-  top: 1000px;
+  top: 1250px;
   left: 15%;
 }
 
@@ -225,14 +225,14 @@ form input[type="submit"] {
   position: absolute;
   font-size: 3em;
   width: 100%;
-  top: 60%;
+  top: 50%;
 }
 
 #bike-pic {
   width: 100%;
   position: absolute;
   margin: 0 auto;
-  top: 25%;
+  top: 35%;
 }
 #bike-pic img {
   width: 100%;

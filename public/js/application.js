@@ -15,7 +15,7 @@ function enableHotspots(){
       $(".hotspot-menu").hide();
       $(".hotspot-instructions").hide();
       // $(".search-bar").hide();
-      // $("#bike-pic").css("bottom", "55%")
+      $("#bike-pic").animate({top: "15%"})
       hsMenu = $(hotspot).find(".hotspot-menu");
       // $("#solutions-menu").remove(hsMenu);
       $("#solutions-menu").append(hsMenu);
