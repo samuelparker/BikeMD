@@ -62,7 +62,7 @@ function createMarker(place) {
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent('<div><strong>' + place.name +
+    infowindow.setContent('<div class="bike-shop-info"><strong>' + place.name +
                           '</strong><br>' + '<br>' +
                           place.vicinity + '</div>');
     infowindow.open(map, this);
