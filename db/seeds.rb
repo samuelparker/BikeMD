@@ -1,13 +1,11 @@
-require 'faker'
+# User.destroy_all
+# Solution.destroy_all
+# Symptom.destroy_all
+# Tool.destroy_all
+# Category.destroy_all
+# Hotspot.destroy_all
 
-User.destroy_all
-Solution.destroy_all
-Symptom.destroy_all
-Tool.destroy_all
-Category.destroy_all
-Hotspot.destroy_all
-
-5.times do 
+5.times do
   User.create(
     username: Faker::Internet.user_name,
     email: Faker::Internet.email,
@@ -38,16 +36,16 @@ Symptom.create(description: "I can't shift into certain gears").update(category_
 Symptom.create(description: "I hear a squealing sound when braking").update(category_id: 3)
 Symptom.create(description: "One pad is rubbing on the wheel").update(category_id: 3)
 
-7.times do 
+7.times do
   Solution.create(est_time: rand(5..60),
           difficulty_level: rand(1..5),
                       body:
 
 <<-EXITTEXT
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
 deserunt mollit anim id est laborum.
 EXITTEXT
@@ -70,7 +68,7 @@ Solution.all.sample.tools << Tool.all.sample
 
 solution_id = 0
 
-Symptom.all.each do |symptom| 
+Symptom.all.each do |symptom|
   solution_id += 1
   symptom.update(solution_id: solution_id)
 end
