@@ -1,6 +1,7 @@
 get '/sessions' do
-  "logged in"
+  erb :'sessions/new'
 end
+
 
 post '/sessions' do
   @user = User.find_by_email(params[:user][:email])
