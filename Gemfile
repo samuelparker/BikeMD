@@ -10,7 +10,11 @@ gem 'sinatra-contrib'
 gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 
+gem 'dotenv'
 gem 'rake'
+gem 'pry'
+gem 'bcrypt'
+gem 'awesome_print'
 
 gem 'shotgun', '~>0.9.1'
 

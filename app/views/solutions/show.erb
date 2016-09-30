@@ -1,0 +1,17 @@
+<div class="solution-category category">
+  <h1>
+    <a href='/symptoms'><%= "#{ @category.name }" %></a> > 
+    <%= "#{ @symptom.description }" %>
+  </h1>
+</div>
+<div class="solution-overview">
+  <h2>
+    Difficulty: <%= "#{ @solution.difficulty_level }" %> Estimated Time: <%= "#{ @solution.est_time }" %>
+  </h2>
+  <h2>
+    Tools: <%= "#{ @tools }" %>
+  <h2>
+</div>
+<div class="solution-details">
+  <p><%= "#{@solution.body}" %></p>
+</div>

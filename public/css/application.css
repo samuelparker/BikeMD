@@ -1,0 +1,227 @@
+* {
+  /*border: 1px solid red;*/
+}
+
+body {
+  background-color: #BAD9F5;
+}
+
+
+.header {
+  text-align: center;
+  font-size: 1.25em;
+  width: 100%;
+  background-color: #962626;
+  position: relative;
+  top: 0%;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.header h1 {
+  display: inline-block;
+}
+#user-menu {
+  padding: 1%;
+  float: left;
+  /*max-height: 5px;*/
+}
+
+#hamburger-menu-icon {
+  padding: 2%;
+  float: right;
+}
+
+#hamburger-menu-icon img {
+  max-height: 50px;
+}
+
+.category a {
+  /*text-decoration: none;*/
+  color: black;
+  font-weight: bold;
+}
+
+.category {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #C46A6A;
+  padding: 1%;
+}
+
+.symptom a {
+  color: black;
+  text-decoration: none;
+}
+
+.solution-category {
+  color: #525252;
+  background-color: white;
+}
+
+.solution-details {
+  text-align: center;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 3%;
+  padding: 3%;
+  margin: 2%;
+}
+
+.solution-overview {
+  text-align: center;
+  background-color: #C46A6A;
+  padding: 3%;
+}
+
+.search-bar {
+  display: block;
+  background-color: #C46A6A;
+}
+
+.search-bar form input[type="text"] {
+  min-width: 75%;
+}
+
+.search-bar form input[type="submit"] {
+  min-width: 10%;
+  color: grey;
+  background-color: white;
+  border-radius: 10%;
+  padding: 1%;
+  margin-right: 2%;
+  box-shadow: 5px 5px 5px #A36F6F;
+}
+/*
+.search-bar form input {
+  font-size: 2em;
+  padding: 1%;
+}
+*/
+form {
+  display: block;
+  background-color: #C46A6A;
+  padding: 2%;
+  position: relative;
+  bottom: 0%;
+}
+
+.user-form h3 {
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #C46A6A;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+input {
+  font-size: 2em;
+  padding: 1%;
+  margin: 1%;
+  min-width: 93%;
+}
+
+form input[type="submit"] {
+  min-width: 95%;
+  padding: 1%;
+  background-color: white;
+  box-shadow: 5px 5px 5px #A36F6F;
+}
+
+/*.new-user-form form input[type="submit"] {
+  margin-left: 2%;
+}*/
+
+#solutions-menu {
+  /*position: absolute;*/
+  /*padding-top: 50%;*/
+  padding-bottom: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.hotspot {
+  /*display: inline-block;*/
+  opacity: 0.5;
+  position: absolute;
+  height: 3.5%;
+  width: 1%;
+  padding: 3.5%;
+  border: 1px solid blue;
+  border-radius: 50%;
+  background-color: #FF0000
+}
+
+#hs-front-brake {
+  bottom: 50%;
+  left: 20%;
+}
+
+#hs-rear-brake {
+  bottom: 50%;
+  left: 69%;
+}
+
+#hs-rear-deraileur {
+  bottom: 23%;
+  left: 76%;
+}
+
+#hs-front-tire {
+  bottom: 0%;
+  left: 15%;
+}
+
+#hs-cranks {
+  bottom: 22%;
+  left: 50%;
+}
+
+#hs-handlebars {
+  bottom: 85%;
+  left: 30%;
+}
+
+#hs-saddle {
+  bottom: 82%;
+  left: 63%;
+}
+
+.hotspot-instructions {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  top: 1000px;
+  left: 15%;
+}
+
+.hotspot-menu {
+  position: absolute;
+  font-size: 3em;
+  width: 100%;
+  top: 60%;
+}
+
+#bike-pic {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  top: 25%;
+}
+#bike-pic img {
+  width: 100%;
+}
+
+#map {
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  width: 900px;
+  height: 900px;
+  background-color: #C46A6A;
+}
