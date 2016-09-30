@@ -1,4 +1,5 @@
 get '/solutions' do
+  @menu = params[:menu]
   @hotspot = Hotspot.find_by(name: params[:hs])
   erb :'solutions/index'
 end
