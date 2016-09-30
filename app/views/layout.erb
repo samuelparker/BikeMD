@@ -11,10 +11,9 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= @maps_token %>&callback=initMap"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
-
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_MAPS_TOKEN"] %>&libraries=places&callback=initMap"></script>
   <title>BikeMD</title>
 </head>
   <header>
@@ -23,5 +22,4 @@
 <body>
   <%= yield %>
 </body>
-
 </html>

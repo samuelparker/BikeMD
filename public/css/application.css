@@ -80,14 +80,10 @@ body {
 .search-bar {
   display: block;
   background-color: #C46A6A;
-  padding: 2%;
-  position: absolute;
-  width: 98%;
-  top: 100px;
 }
 
 .search-bar form input[type="text"] {
-  min-width: 80%;
+  min-width: 75%;
 }
 
 .search-bar form input[type="submit"] {
@@ -95,39 +91,41 @@ body {
   color: grey;
   background-color: white;
   border-radius: 10%;
-  /*padding: 1%;*/
+  padding: 1%;
   margin-right: 2%;
   box-shadow: 5px 5px 5px #A36F6F;
 }
-
+/*
 .search-bar form input {
   font-size: 2em;
   padding: 1%;
 }
-
-.user-form {
+*/
+form {
   display: block;
   background-color: #C46A6A;
-  padding: 3%;
+  padding: 2%;
   position: relative;
   bottom: 0%;
 }
 
 .user-form h3 {
-  margin: 0;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #C46A6A;
   color: white;
   text-align: center;
   font-size: 3em;
 }
 
-.user-form input {
+input {
   font-size: 2em;
   padding: 1%;
   margin: 1%;
   min-width: 93%;
 }
 
-.user-form form input[type="submit"] {
+form input[type="submit"] {
   min-width: 95%;
   padding: 1%;
   background-color: white;
@@ -210,12 +208,10 @@ body {
 }
 
 #bike-pic {
-  /*max-width: 500px;*/
   width: 100%;
   position: absolute;
   margin: 0 auto;
-  top: 20%;
-  /*bottom: 40%;*/
+  top: 25%;
 }
 #bike-pic img {
   width: 100%;
